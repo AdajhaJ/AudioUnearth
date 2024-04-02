@@ -1,0 +1,93 @@
+import random
+
+#song list
+song_list = [
+"6 FOOT 7 FOOT",
+"911",
+"20 SOMETHING",
+"APPLYING PRESSURE",
+"ALL I ASK",
+"ALRIGHT",
+"ALWAYS",
+"AWKWARD",
+"BEAT IT",
+"BEATING DOWN YO BLOCK",
+"BEFORE HE CHEATS",
+"BIG POPPA",
+"BLUNT BLOWIN",
+"CHICAGO",
+"COULDVE BEEN",
+"DEAD TO ME",
+"DESPUES DE LA PLAYA",
+"FAMILY TIES",
+"FANCY",
+"FANETO",
+"FIRST PERSON SHOOTER",
+"GANGSTA",
+"GARDEN",
+"GET ALONG BETTER",
+"GRAVITY",
+"HELL N BACK",
+"HER",
+"HOW MUCH A DOLLAR COST",
+"I THINK",
+"I THOUGHT YOU WANTED TO DANCE",
+"IF I AINT GOT YOU",
+"IF I WERE A BOY",
+"INSANE IN THE BRAIN",
+"JEALOUSY, JEALOUSY",
+"JIMMY COOKS",
+"KEVINS HEART",
+"LEMME SEE",
+"LES",
+"LONG WAY 2 GO",
+"LOVERS ROCK",
+"LOW",
+"LOYALTY",
+"MY LIFE",
+"ME AND YOUR MAMA",
+"MY LOVE MINE ALL MINE",
+"NEVER LOSE ME",
+"NO LIMIT",
+"NO LOVE",
+"NO ONE KNOWS",
+"OPEN ARMS",
+"PINK MATTER",
+"PLAYING GAMES",
+"POISON",
+"PYRAMIDS",
+"REMEMBER THE TIME",
+"REMINDER",
+"RIGHT THERE",
+"RUNNING OUT OF TIME",
+"SHE",
+"SMOKING OUT THE WINDOW",
+"SOMEONE LIKE YOU",
+"STRANGE",
+"SUMMER",
+"SUPER RICH KIDS",
+"TELEKINESIS",
+"TELEVISION",
+"THE ART OF PEER PRESSURE",
+"TITI ME PREGUNTO",
+"UNITED IN GRIEF",
+"USED",
+"VSOP",
+"WESLEYS THEORY",
+"YOU BROKE MY HEART"
+]
+
+#selected song
+current_selection = []
+
+#playlist
+playlist = []
+
+current_song = []
+
+def song_change():
+  current_selection.clear()
+  songrand = random.choice(song_list)
+  current_selection.append(songrand)
+  print(current_selection) #print current song for debugging
+
